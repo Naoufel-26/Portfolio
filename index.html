@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Mokhtari Naoufel</title>
+</head>
+<body>
+
+  <header>
+    <h1>Mokhtari Naoufel</h1>
+    <p>Développeur web en cours de formation</p>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home">
+      <h2>Bienvenue sur mon portfolio</h2>
+      <p>Découvrez mes projets, mon parcours et comment me contacter.</p>
+    </section>
+
+    <section id="about">
+      <h2>Me concernant</h2>
+      <img src="pps.png" alt="Photo de profil de Mokhtari Naoufel, souriant devant un fond neutre" width="200">
+      <p>Je m'appelle Mokhtari Naoufel. Je suis étudiant passionné par le développement web. J'apprends HTML, CSS et JavaScript, et j'aime créer des pages claires et accessibles.</p>
+    </section>
+
+    <section id="work">
+      <h2>Mon travail</h2>
+      <table border="3">
+        <caption>Mes projets</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nom du projet</th>
+            <th scope="col">Description</th>
+            <th scope="col">Lien</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Page de présentation</td>
+            <td>Une première page web structurée en HTML sémantique.</td>
+            <td><a href="https://github.com/Naoufel-26/forumS">Voir le projet</a></td>
+          </tr>
+          <tr>
+            <td>Formulaire d'inscription ou de connexion </td>
+            <td>Mon premier formulaire .</td>
+            <td><a href="https://github.com/Naoufel-26/Firstformulaire">Voir le projet</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="resume">
+      <h2>Mon CV</h2>
+      <ul>
+        <li><a href="resume.pdf" download>Télécharger mon CV (PDF)</a></li>
+      </ul>
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/rwj_fFwMI9Y?autoplay=1&loop=1&playlist=rwj_fFwMI9Y&start=300&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&enablejsapi=1"
+  title="Vidéo de présentation"
+  style="border:0;"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+  onload='setTimeout(() => this.contentWindow.postMessage(JSON.stringify({event:"command",func:"setVolume",args:[20]}),"*"), 1500)'>
+</iframe>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+  <p>
+    <label for="nom">Nom</label><br>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+  </p>
+  <p>
+    <label for="prenom">Prénom</label><br>
+    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required>
+  </p>
+  <p>
+    <label for="telephone">Numéro de téléphone</label><br>
+    <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" autocomplete="tel">
+  </p>
+  <p>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required>
+  </p>
+  <p>
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre message ici..." required></textarea>
+  </p>
+  <button type="submit">Envoyer le message</button>
+</form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mokhtari Naoufel. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
